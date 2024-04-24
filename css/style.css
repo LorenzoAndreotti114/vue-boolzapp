@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(219, 219, 210, 1);
+    z-index: 1;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.1vw;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+.f-text {
+    font-size: 1.1vw;
+}
+
+.f-text-big {
+    font-size: 1.5vw;
+}
+
+.f-text-msg {
+    font-size: 1.5vw;
+}
+
+a {
+    color: black;
+}
+
+img {
+    width: 70%;
+}
+
+.round-img {
+    border-radius: 50% ;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin: 10%;
+    
+
+    background-color: aqua;
+}
+
+
+.header-line {
+    background-color: rgba(0, 150, 136, 1);
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+/* MAIN */
+
+.big-container {
+    display: flex;
+    width: 80%;
+    margin: 1% 10%;
+
+    /* DEBUG */
+    height: 800px;
+}
+
+.big-container * {
+    z-index: 3;
+}
+
+
+/* LEFT */
+.container-left {
+    width: 25%;
+    height: 100%;
+}
+
+/* LEFT HEADER */
+.left-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+
+    background-color: rgba(234, 234, 234, 1);
+}
+
+.left-header-pp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.left-header-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    text-align: right;
+    padding-right: 3%;
+}
+
+.left-header-menu i {
+    font-size: 1.5rem;
+    color: gray;
+    padding: 2% 3%;
+}
+
+
+/* LEFT NOTIF */
+.left-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+
+    background-color: rgba(142, 218, 252, 1);
+}
+
+.left-not-pp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.round-bell {
+    border-radius: 50% ;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin: 10%;
+
+    background-color: white;
+    color: rgba(142, 218, 252, 1);
+    padding: 15%;
+    font-size: 1.5rem;
+}
+
+.left-not-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+}
+
+/* LEFT SEARCH */
+.left-searchbar{
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+
+    background-color: rgba(234, 234, 234, 1);
+}
+
+.search-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 14%;
+}
+
+.glass {
+    font-size: 1.3vw;
+
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 10px 0 0 10px;
+}
+
+.search-right{
+    padding: 2%;
+    padding-left: 0;
+    width: 86%;
+    font-size: 1rem;
+}
+
+.chat-search {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 10px;
+}
+
+/* LEFT CONTACTS */
+.left-contacts {
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    background-color: white;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    background-color: white;
+}
+
+.left-contact-pp {
+    width: 25%;
+    height: 100%;
+}
+
+.left-contact-info {
+    width: 65%;
+    height: 100%;
+}
+
+.left-contact-hour {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    height: 4.5vw;
+    font-size: 1vw;
+}
+
+
+
+
+
+/* RIGHT */
+.container-right {
+    width: 75%;
+    height: 100%;
+}
+
+/* RIGHT HEADER */
+
+.right-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+
+    background-color: rgba(234, 234, 234, 1);
+    border-left: 1px solid gray;
+}
+
+.right-header-pp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 100%;
+}
+
+.right-header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 77%;
+    height: 100%;
+}
+
+.right-header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+    height: 100%;
+
+    color: gray;
+}
+
+.right-header-menu i {
+    font-size: 1.8vw;
+    margin: 0 10%;
+}
+
+/* MSG SCREEN */
+.msg-screen {
+    background-image: url(../img/mine.jpg);
+    width: 100%;
+    height: 82%;
+    padding: 5% 7%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* RIGHT MSG */
+.msg-col-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 1%;
+}
+
+.msg-right {
+    display: flex;
+    position: relative;
+    padding: 2%;
+    padding-right: 0;
+    border-radius: 10px;
+    width: 60%;
+
+    background-color: rgba(213, 249, 186, 1);
+}
+
+.msg-right-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+.hover-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 3%;
+    background-color: white;
+    width: 40%;
+    padding: 2%;
+}
+
+.msg-right-menu:hover + .hover-menu {
+    display: flex;
+}
+
+.msg-left-menu:hover + .hover-menu {
+    display: flex;
+}
+
+.hover-menu:hover {
+    display: flex;
+}
+
+/* LEFT MSG */
+.msg-col-left {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin: 1%;
+}
+
+.msg-left {
+    position: relative;
+    display: flex;
+    padding: 2%;
+    padding-right: 0;
+    border-radius: 20px;
+    width: 60%;
+
+    background-color: white;
+}
+
+.msg-left-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+/* RIGHT TEXT MENU */
+
+.right-text-menu {
+    display: flex;
+    width: 100%;
+    height: 8%;
+
+    background-color: rgba(234, 234, 234, 1);
+}
+
+.emoji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 8%;
+}
+
+.emoji i {
+    font-size: 2vw;
+    padding: 20%;
+    color: gray;
+}
+
+.msg-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84%;
+}
+
+.msg-text input {
+    width: 100%;
+    height: 65%;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 10px;
+}
+
+.vocal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 8%;
+}
+
+.vocal i {
+    font-size: 2vw;
+    padding: 20%;
+    color: gray;
+}
